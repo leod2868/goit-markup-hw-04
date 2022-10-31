@@ -183,15 +183,12 @@ color: var(--primary-text-color);
 .balance {
   width: 270px;
 }
-.balance::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.icon-help {
+  display: flex;
+  align-items:center;
   background-color: var(--thirdly-background-color);
   margin-bottom: 30px;
+  height: 120px;
 }
 
 .balance:not(:last-child) {
@@ -256,6 +253,22 @@ color: var(--primary-text-color);
   background-color: var(--thirdly-background-color);
   padding-top: 94px ;
   padding-bottom: 94px ;
+}
+.clients {
+  display: flex;
+  gap: 30px;
+}
+.clients-list {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.fichion {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* стилизація footer */
