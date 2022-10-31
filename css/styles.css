@@ -116,8 +116,11 @@ color: var(--primary-text-color);
 }
 .current {
   color: var(--accent-color);
-
 }
+ .item {
+  display: inline-flex;
+  align-items: center;
+} 
 
 /*стилизация заглавий вторичнім цветом текста */
 .sechion-title {
@@ -243,16 +246,34 @@ color: var(--primary-text-color);
   padding-bottom: 30px;
 }
 .speciality {
-  margin: 0 ;
+  margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.icon-net {
+  fill:#AFB1B8;
+}
  .team {
   background-color: var(--thirdly-background-color);
   padding-top: 94px ;
   padding-bottom: 94px ;
+}
+.net {
+  display: flex;
+  justify-content: center;
+}
+.social-net {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center; 
+}
+.social-net:not(:last-child) {
+  margin-right: 10px;
 }
 .clients {
   display: flex;
@@ -318,7 +339,24 @@ color: var(--primary-text-color);
   font-style: normal ;
   margin-top: 20px;
 }
-
+.netlist {
+ display: flex;
+ justify-content: flex-start;  
+}
+.accession {
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.bigfooter {
+  display: flex;
+  align-items: baseline;
+}
+.halffooter {
+  margin-right: 70px;
+}
+.netlisticon {
+  fill: var(--white-color);
+}
 /* стілізація сторінки portofolio */
 .top {
   border: 1px solid #ECECEC;
