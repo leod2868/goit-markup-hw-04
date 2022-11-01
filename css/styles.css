@@ -256,6 +256,9 @@ color: var(--primary-text-color);
 .icon-net {
   fill:#AFB1B8;
 }
+.icon-net:hover{
+  fill: var(--white-color);
+}
  .team {
   background-color: var(--thirdly-background-color);
   padding-top: 94px ;
@@ -269,23 +272,32 @@ color: var(--primary-text-color);
   display: flex;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   align-items: center; 
+  border-radius: 50%;
+}
+.social-net:hover {
+  background-color: var(--accent-color);
 }
 .social-net:not(:last-child) {
   margin-right: 10px;
 }
-.clients {
-  display: flex;
-  gap: 30px;
+ .clients {
+  display:flex;
+  gap: 30px; 
 }
-.clients-list {
+.hope {
   display: flex;
   width: 170px;
   height: 92px;
   align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+}
+.logo:hover {
+  fill: var(--accent-color);
+}
+.hope:hover {
+  border: 1px solid var(--accent-color)
 }
 .fichion {
   padding-top: 94px;
@@ -342,6 +354,20 @@ color: var(--primary-text-color);
 .netlist {
  display: flex;
  justify-content: flex-start;  
+}
+.combo-net {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  background-color:rgba(255, 255, 255, 0.1); 
+  border-radius: 50%;
+}
+.combo-net:hover {
+  background-color: var(--accent-color)
+}
+.combo-net {
+  margin-right: 10px;
 }
 .accession {
   color: var(--white-color);
