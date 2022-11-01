@@ -73,7 +73,16 @@ button {
 }
 .roof-connection {
   margin-left: auto;
-  
+}
+.flash {
+  display: flex;
+  align-items: center;
+}
+.small {
+  fill: var(--primary-text-color);
+}
+.small:hover {
+fill: var(--accent-color);
 }
 .roof-logo {
   color: var(--accent-color);
@@ -117,10 +126,7 @@ color: var(--primary-text-color);
 .current {
   color: var(--accent-color);
 }
- .item {
-  display: inline-flex;
-  align-items: center;
-} 
+
 
 /*стилизация заглавий вторичнім цветом текста */
 .sechion-title {
@@ -292,6 +298,9 @@ color: var(--primary-text-color);
   align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+}
+.logo {
+  fill: #AFB1B8;;
 }
 .logo:hover {
   fill: var(--accent-color);
