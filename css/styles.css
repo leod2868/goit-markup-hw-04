@@ -114,6 +114,7 @@ color: var(--primary-text-color);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  
 }
 
 .nav-link:hover,
