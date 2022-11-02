@@ -66,6 +66,7 @@ button {
 .roof-nav ,
 .roof-connection {
   display: flex;
+  align-items: center;
 
 }
 .roof-nav .item:not(:last-child) ,
@@ -80,7 +81,7 @@ button {
   display: flex; 
 }
 .small {
-  fill: var(--primary-text-color);
+  fill: currentColor ;
   margin-right: 10px;
 }
 .small:hover {
@@ -434,7 +435,11 @@ margin-right: 8px;
 .new-button:hover,
 .new-button:focus {
   color: var(--white-color);
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
+  box-shadow: 
+   0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+   0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+   0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .flax {
   display: flex;
@@ -454,6 +459,17 @@ margin-right: 8px;
   font-size: 16px;
   line-height: 1.9;
   margin: 0;
+}
+.aim {
+  text-decoration: none;
+  /* display: flex; */
+}
+.direction:hover ,
+.direction:focus {
+ box-shadow:
+  1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+  0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .combo {
   background: #FFFFFF;
