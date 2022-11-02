@@ -8,11 +8,11 @@
 html {
 box-sizing: border-box;
 }
-*,
+/* *,
 *::before,
 *::after {
 box-sizing: inherit;
-}
+} */
 
 :root {
   --primary-text-color: #757575;
@@ -66,6 +66,7 @@ button {
 .roof-nav ,
 .roof-connection {
   display: flex;
+
 }
 .roof-nav .item:not(:last-child) ,
 .roof-connection .item:not(:last-child) {
@@ -73,13 +74,14 @@ button {
 }
 .roof-connection {
   margin-left: auto;
+  gap: 30px;
 }
 .flash {
-  display: flex;
-  align-items: center;
+  display: flex; 
 }
 .small {
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 .small:hover {
 fill: var(--accent-color);
@@ -113,8 +115,7 @@ color: var(--primary-text-color);
   letter-spacing: 0.02em;
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
-  
+  padding-bottom: 32px; 
 }
 
 .nav-link:hover,
@@ -195,8 +196,10 @@ color: var(--primary-text-color);
 }
 .icon-help {
   display: flex;
-  align-items:center;
+  align-items: center;
+  justify-content: center;
   background-color: var(--thirdly-background-color);
+  border-radius: 4px;
   margin-bottom: 30px;
   height: 120px;
 }
@@ -261,11 +264,11 @@ color: var(--primary-text-color);
   letter-spacing: 0.03em;
 }
 .icon-net {
-  fill:#AFB1B8;
+  fill:currentColor
 }
-.icon-net:hover{
+/* .icon-net:hover{
   fill: var(--white-color);
-}
+} */
  .team {
   background-color: var(--thirdly-background-color);
   padding-top: 94px ;
@@ -280,12 +283,15 @@ color: var(--primary-text-color);
   width: 44px;
   height: 44px;
   align-items: center; 
+  justify-content: center;
   border-radius: 50%;
+  color: #AFB1B8;
 }
 .social-net:hover {
   background-color: var(--accent-color);
+  color: var(--white-color);
 }
-.social-net:not(:last-child) {
+.freedom:not(:last-child) {
   margin-right: 10px;
 }
  .clients {
@@ -297,17 +303,19 @@ color: var(--primary-text-color);
   width: 170px;
   height: 92px;
   align-items: center;
-  border: 1px solid #AFB1B8;
+  justify-content: center;
+  border: 1px solid currentColor;
   border-radius: 4px;
+  color: #AFB1B8;
 }
 .logo {
-  fill: #AFB1B8;;
+  fill:currentColor;
 }
 .logo:hover {
   fill: var(--accent-color);
 }
 .hope:hover {
-  border: 1px solid var(--accent-color)
+  color: var(--accent-color);
 }
 .fichion {
   padding-top: 94px;
@@ -370,10 +378,13 @@ color: var(--primary-text-color);
   width: 44px;
   height: 44px;
   align-items: center;
+  justify-content: center;
   background-color:rgba(255, 255, 255, 0.1); 
   border-radius: 50%;
 }
-.combo-net:hover {
+.combo-net:hover ,
+.combo-net:focus
+ {
   background-color: var(--accent-color)
 }
 .combo-net {
