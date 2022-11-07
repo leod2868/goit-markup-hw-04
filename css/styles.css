@@ -114,7 +114,8 @@ color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px; 
 }
@@ -392,6 +393,8 @@ color: var(--primary-text-color);
   margin-right: 10px;
 }
 .accession {
+  font-weight: 700;
+  line-height: 1.14;
   color: var(--white-color);
   margin-bottom: 20px;
 }
@@ -409,10 +412,12 @@ color: var(--primary-text-color);
 .top {
   border: 1px solid #ECECEC;
 }
+.filter {
+  padding: 94px 0;
+}
 .products {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .part:not(:last-child) {
@@ -444,7 +449,6 @@ margin-right: 8px;
 .flax {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .card {
@@ -458,14 +462,14 @@ margin-right: 8px;
 .section-text {
   font-size: 16px;
   line-height: 1.9;
-  margin: 0;
+  color: var(--primary-text-color);
 }
 .aim {
   text-decoration: none;
-  /* display: flex; */
+   display: block;
 }
-.direction:hover ,
-.direction:focus {
+.aim:hover ,
+.aim:focus {
  box-shadow:
   1px 4px 6px 0px rgba(0, 0, 0, 0.16),
   0px 4px 4px 0px rgba(0, 0, 0, 0.06),
